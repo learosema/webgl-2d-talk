@@ -8,4 +8,4 @@ layout: layouts/base.njk
 - Painting cute 2D arts in WebGL (and THREE)
 - What is WebGL and some fundamentals
 - Coding session
-- [https://terabaud.github.io/slides-webgl/](https://terabaud.github.io/slides-webgl/)
+- [https://webgl-2d.netlify.app/](https://webgl-2d.netlify.app/)

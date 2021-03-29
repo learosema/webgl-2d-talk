@@ -4,3 +4,14 @@ body {
   height: 100vh;
   margin: 0;
 }
+
+/* Hide scrollbars in windows */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox (not sure if that works) */
+}
