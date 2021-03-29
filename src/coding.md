@@ -1,5 +1,5 @@
 ---
-title: Hello
+title: Coding
 layout: layouts/base.njk
 ---
 

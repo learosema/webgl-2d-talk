@@ -1,5 +1,5 @@
 ---
-title: Hello
+title: WebGL pipeline
 layout: layouts/base.njk
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: GLSL
+title: GLSL Functons
 layout: layouts/base.njk
 ---
 
