@@ -1,0 +1,61 @@
+$base-size: 1rem;
+
+$size--100: $base-size * 0.5;
+$size--200: $base-size * 0.67;
+$size--300: $base-size * 0.75;
+$size--400: $base-size;
+$size--500: $base-size * 1.33;
+$size--600: $base-size * 1.77;
+$size--700: $base-size * 2.36;
+$size--800: $base-size * 3.15;
+$size--900: $base-size * 4.2;
+$size--big: $base-size * 5.6;
+
+$black-coffee--100: #86787c;
+$black-coffee--200: #5f5554;
+$black-coffee--300: #3a3335;
+
+$ruby--100: #ff518a;
+$ruby--200: #d81e5b;
+$ruby--300: #ab1848;
+
+$cornflower--100: #99c2fe;
+$cornflower--200: #6585d6;
+$cornflower--300: #214e91;
+
+$badass--100: #bada55;
+$badass--200: #7a9a11;
+$badass--300: #5a7a11;
+$badass--400: #2a5a05;
+
+$papaya-whip--100: #fff9ed;
+$papaya-whip--200: #fdf0d5;
+$papaya-whip--300: #ffe5af;
+$papaya-whip--400: #cfb59f;
+
+$opal--100: #f0f5f4;
+$opal--200: #c6d8d3;
+$opal--300: #94aca5;
+
+$white: #fff;
+$whitesmoke: #f4f4f4;
+
+$grey--100: #ccc;
+$grey--200: #777;
+$grey--300: #333;
+$grey--400: #111;
+$black: #000;
+
+$main-bg: $grey--400;
+$main-fg: $white;
+
+:root {
+  --main-bg: #{$black};
+  --main-fg: #{$grey--400};
+  --nav-bg: #{$ruby--200};
+  --nav-fg: #{$white};
+  --nav-bg--hover: #{$black};
+
+  --button-bg--primary: #{$ruby--200};
+  --button-fg--primary: #{$white};
+}

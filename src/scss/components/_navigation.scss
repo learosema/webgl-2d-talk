@@ -1,0 +1,116 @@
+.navigation__layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  z-index: 1;
+  background: var(--nav-bg);
+
+  display: none;
+
+  ul {
+    opacity: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100%;
+
+    align-items: center;
+    justify-content: space-around;
+
+    @media (min-height: 500px) {
+      justify-content: center;
+      flex-direction: column;
+
+      li {
+        width: 100%;
+        padding: 0.5em 0;
+
+        a {
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+
+    li {
+      display: block;
+
+      margin: 0;
+      a {
+        color: var(--nav-fg);
+        cursor: pointer;
+        text-decoration: none;
+        padding: 0.25em;
+        transition: background 250ms ease;
+        font-size: $size--600;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        &:hover {
+          background: var(--nav-bg--hover);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+button[aria-expanded='true'] + .navigation__layer {
+  display: block;
+  clip-path: circle(0% at top right);
+  transition: clip-path 1s ease;
+
+  &.animate {
+    clip-path: circle(200% at top right);
+    right: 0;
+    ul {
+      opacity: 1;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .navigation {
+    position: sticky;
+    top: 0;
+  }
+
+  .navigation__layer {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    clip-path: none;
+    background: var(--nav-bg);
+    display: block;
+
+    ul {
+      opacity: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      li {
+        display: block;
+        margin: 8px 0;
+
+        width: auto;
+        a {
+          padding: 8px 16px;
+          color: var(--nav-fg);
+          font-size: $size--300;
+
+          &:hover {
+            background: var(--nav-bg--hover);
+          }
+          &[data-state='active'] {
+            background: var(--nav-bg--hover);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.name }}
+      –
+      {{ title }}</title>
+    <style>{% include "css/index.css" %}</style>
+  </head>
+  <body>
+    <shader-canvas class="shader-canvas | full-fixed" dpr="1" aria-hidden="true">
+      {% set vertexShader %}
+      {% include 'shaders/background.vs' %}
+      {% endset %}
+      {% set fragmentShader %}
+      {% include 'shaders/background.fs' %}
+      {% endset %}
+      <script type="vert">
+        {{ vertexShader | glslminify | safe }}
+      </script>
+      <script type="frag">
+        {{ fragmentShader | glslminify | safe }}
+      </script>
+    </shader-canvas>
+    {% include "partials/navigation.njk" %}
+    <main id="main-content" tabindex="-1">
+      {% block content %}
+        {{ content | safe }}
+      {% endblock %}
+    </main>
+    <script type="module" src="{{ site.url }}/js/index.esm.js"></script>
+  </body>
+</html>

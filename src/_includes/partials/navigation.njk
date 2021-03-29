@@ -1,0 +1,12 @@
+<nav class="navigation" id="top-nav" aria-label="Top navigation">
+  {% include 'partials/burger.njk' %}
+  <section class="navigation__layer">
+    <ul>
+      {% for item in navigation.items %}
+        <li>
+          <a href="{{ site.url }}{{ item.href }}" {{ helpers.getLinkActiveState(item.href, page.url) | safe }}>{{ item.text }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+</nav>

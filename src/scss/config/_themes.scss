@@ -1,0 +1,61 @@
+body {
+  color: $black;
+  background: $white;
+}
+
+h1 {
+  color: $ruby--300;
+}
+
+h2 {
+  color: $black-coffee--300;
+}
+
+h3 {
+  color: $black-coffee--200;
+}
+
+h4,
+h5 {
+  color: $ruby--200;
+}
+
+code {
+  color: $badass--400;
+}
+
+a {
+  color: $cornflower--200;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: $whitesmoke;
+    background: $black;
+  }
+
+  h1 {
+    color: $papaya-whip--300;
+  }
+
+  h2 {
+    color: $papaya-whip--400;
+  }
+
+  h3 {
+    color: $ruby--300;
+  }
+
+  h4,
+  h5 {
+    color: $ruby--200;
+  }
+
+  code {
+    color: $badass--100;
+  }
+
+  a {
+    color: $cornflower--100;
+  }
+}

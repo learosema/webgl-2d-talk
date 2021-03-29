@@ -1,0 +1,16 @@
+@import 'vendor/prism';
+@import 'vendor/prism-dark';
+
+@import 'config/reset';
+@import 'config/variables';
+@import 'config/typography';
+@import 'config/global';
+@import 'config/themes';
+
+@import 'components/navigation';
+@import 'components/burger';
+@import 'components/main';
+@import 'components/shader-canvas';
+
+@import 'utils/full-fixed';
+@import 'utils/visually-hidden';

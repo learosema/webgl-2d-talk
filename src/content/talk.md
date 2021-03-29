@@ -102,6 +102,14 @@ void main() {
 
 ---
 
+## Types of variables
+
+- attribute - used in the vertex shader to pull one value out of the provided buffer
+- varying - used to pass values from the vertex shader to the fragment shader
+- uniform - used to pass values from the javascript side to the shaders
+
+---
+
 ## Useful functions
 
 - mix - interpolate between 2 values

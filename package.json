@@ -1,0 +1,34 @@
+{
+  "name": "webgl-2d-arts-talk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build -s && npx serve public",
+    "dev": "concurrently 'npm:watch:css' 'npm:serve:html'",
+    "build:html": "eleventy",
+    "serve:html": "eleventy --serve",
+    "build:css": "sass src/scss/:src/_includes/css/",
+    "watch:css": "sass src/scss/:src/_includes/css/ --watch",
+    "build": "npm run build:css -s && npm run build:html -s",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terabaud/webgl-2d-talk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/terabaud/webgl-2d-talk/issues"
+  },
+  "homepage": "https://github.com/terabaud/webgl-2d-talk#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "concurrently": "^6.0.0",
+    "esbuild": "^0.11.0",
+    "html-minifier": "^4.0.0",
+    "sass": "^1.32.8"
+  }
+}
