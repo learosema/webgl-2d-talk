@@ -1,3 +1,8 @@
+---
+title: Thank you
+layout: layouts/base.njk
+---
+
 # Thank you
 
 ## Resources
