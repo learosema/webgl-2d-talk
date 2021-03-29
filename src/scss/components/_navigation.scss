@@ -92,6 +92,7 @@ button[aria-expanded='true'] + .navigation__layer {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
+      padding: 0.5rem;
 
       li {
         display: block;
